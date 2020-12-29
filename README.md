@@ -1,1 +1,1 @@
-# -js_variable_exercice6
+# -js_variable_exercice7
