@@ -1,24 +1,15 @@
-# Exercice 1 - Strings
+** En utilisant des prompts et des alerts**
 
-- ```let phrase = 'Bonjour tout le monde      '```
+> 1. Affiche uniquement la premiere lettre du prénom
 
-- Afficher la longueur de la phrase
+> 2. Affiche la dernière lettre du prénom de la personne
 
-- Enlever l'espace à la fin grâce à une méthode
+> 3. Affiche le prénom sans sa première lettre
 
-- Reafficher la longueur de la phrase
+> 4. Affiche le prénom de la personne mais avec la 2eme lettre en majuscule uniquement (rentre un prénom en minuscule dans le prompt)
 
-- Afficher uniquement la dernière lettre de la phrase
+> 5. Demande a l'utilisateur d'entrer son prénom puis demande lui quelle lettre il veut mettre en majuscule, affiche lui son prénom avec la lettre désirée en majuscule
 
-- Enlever "Bonjour" de la phrase
+> 6. Quel que soit la façon dont a été entré le prénom, le nom se réaffiche avec la première lettre est en majuscule et le reste en minuscule
 
-- Remettre "Bonjour" au debut de la phrase grâce à une méthode
-
-- Supprimer toute la phrase sauf "Bonjour" grâce à une méthode
-
-
-- Remplacer dans la phrase le mot "number" par le mot "string"
-    - ```let phrase2 = "Ceci est une variable de type number !"```
-
-- Mettre tous les number dans la phrase en minuscule
-    - ```let phrase3 = "Ceci est une variable de type NuMbEr ! Les numbers c'est trop bien Number numBer numbeR"```
+> 7. Affiche le prénom de la personne mais avec une lettre aléatoire retirée (bonus)

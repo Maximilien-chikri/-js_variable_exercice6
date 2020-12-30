@@ -1,40 +1,41 @@
-let phrase = "Bonjour tout le monde"  ;
-// afficher la longueur 
-console.log(`${phrase.length}`);
-// enlever l'espace
-phrase = phrase.trim();
-// phrase = phrase.replace(/ +\s/, "")
+// afficher uniquement la première lettre du prénom
+let prénom = prompt("prénom" )
+alert(prénom.charAt(0));
 
-// reafficher la longueur 
-console.log(`${phrase.length}`);
-// afficher la dernière lettre
-console.log(phrase.charAt(phrase.length -1));
+// Affiche la dernière lettre du prénom de la personne
 
-// console.log(phrase.slice(-1));
+alert(prénom.charAt(prénom.length -1));
 
-// console.log(phrase.substr(20));
+// Affiche le prénom sans sa première lettre
 
-// console.log(phrase.substring(2));
-
-// enlever le bonjour
-phrase = phrase.replace('Bonjour ', "")
-
-console.log(phrase)
-// remmetre bonjour
-let bonjour = "bonjour";
-phrase = bonjour.concat(" ", phrase);
-console.log(phrase);
+// alert(prénom.substring(1));
 
 
-// supprimer toute la phrase sauf le " bonjour"
-phrase = phrase.substring(0,8);
-console.log(phrase);
+// Affiche le prénom de la personne mais avec la 2eme lettre en majuscule uniquement (rentre un prénom en minuscule dans le prompt)
 
-// remplacer
-let phrase2 = "ceci est une variable de type number !";
-console.log(phrase2);
-phrase2 = phrase.replace("number", "string")
-let phrase3 = "ceci est une variable de typer NuMbEr ! les numbers c'est trop bien Number numBer numbeR"
-console.log(phrase3);
-phrase3 = phrase3.replace(/number/ig, "number");
-console.log(phrase3);
+// prénom = prénom.toLocaleLowerCase;
+// alert(prénom.charAt(0) + prénom.charAt(1).toLocaleUpperCase() + prénom.slice(2));
+
+// let upper = prénom.charAt(1)
+// alert(prénom.replace(upper.toUpperCase());)
+
+
+
+// Demande a l'utilisateur d'entrer son prénom puis demande lui quelle lettre il veut mettre en majuscule, affiche lui son prénom avec la lettre désirée en majuscule
+
+// let lettre = prompt(`quel lettre voulez vous mettre en majuscule dans `${prénom}``);
+
+// alert(prénom.replace(lettre, lettre.toLocaleLowerCase));
+
+// Quel que soit la façon dont a été entré le prénom, le nom se réaffiche avec la première lettre est en majuscule et le reste en minuscule
+
+// let firstUpper = prénom.charAt(0);
+// alert(prénom.replace(firstUpper, firstUpper.toUpperCase));
+// alert(prénom.charAt(0).toUpperCase() + prénom.substring(1)); 
+
+
+// Affiche le prénom de la personne mais avec une lettre aléatoire retirée (bonus)
+
+let nbA1 = Math.round(Math.random()*prénom.length);
+console.log(nbA1)
+alert(prénom.replace(prénom.charAt(nbA1), ""));
